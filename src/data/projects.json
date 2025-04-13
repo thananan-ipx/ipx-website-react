@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "Investment System",
+      "description": "Implements Investment System for Broker to see information about investment of user",
+      "category": "Web Development",
+      "client": "Anonymous",
+      "technologies": ["Next.JS", ".NET", "MySQL"],
+      "image": "/lovable-uploads/portfolio1_1.png",
+      "duration": "6 months",
+      "teamSize": 5,
+      "challenge": "The client needed a comprehensive system that would allow brokers to monitor client investments in real-time, with detailed analytics and reporting capabilities.",
+      "solution": "We developed a robust investment tracking system with a React frontend and .NET backend, integrating multiple databases to handle complex financial data relationships.",
+      "results": "The system improved broker efficiency by 40% and provided clients with better visibility into their investments, resulting in increased client satisfaction and retention.",
+      "gallery": [
+        "/lovable-uploads/portfolio1_1.png",
+        "/lovable-uploads/portfolio1_2.png",
+        "/lovable-uploads/portfolio1_3.png"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Rocket Plan",
+      "description": "Made task breakdown and estimate working plan to monitor and control project",
+      "category": "Project Management",
+      "client": "METANET Corporation Co., Ltd.",
+      "technologies": ["JavaScript", "React", "Node.js"],
+      "image": "/lovable-uploads/portfolio2.webp",
+      "duration": "1 months",
+      "teamSize": 1,
+      "website": "https://metanet.co.th",
+      "challenge": "METANET needed a better way to plan, track, and manage their complex software development projects across multiple teams.",
+      "solution": "We developed a custom project management tool that provided granular task breakdown, resource allocation, and progress tracking capabilities.",
+      "results": "Project delivery times improved by 30%, and the tool provided management with better visibility into project status and resource utilization.",
+      "gallery": [
+        "/lovable-uploads/portfolio2.webp"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Anusit Model",
+      "description": "Update Excel File with VBA macro to increase algorithm of excl file",
+      "category": "Software Development",
+      "client": "P.A.M Model Service Co., Ltd.",
+      "technologies": ["VBA", "Excel"],
+      "image": "/lovable-uploads/portfolio3.webp",
+      "duration": "1 months",
+      "teamSize": 1,
+      "challenge": "The client had a complex Excel model that was slow and difficult to maintain, with calculations taking too long to process.",
+      "solution": "We optimized the existing Excel model using VBA macros to improve calculation efficiency and add automated features that simplified data entry and reporting.",
+      "results": "Calculation time was reduced by 75%, and user errors decreased significantly due to improved data validation and automated processes.",
+      "gallery": [
+        "/lovable-uploads/portfolio3.webp"
+      ]
+    }
+  ]
+  

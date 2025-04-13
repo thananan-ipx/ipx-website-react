@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 213 90% 55%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 213 90% 55%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 213 90% 55%;
+    
+    --radius: 0.5rem;
+  }
+  
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 213 90% 55%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 217 33% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 213 90% 55%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 213 90% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-blue-800/30 selection:text-white;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased font-noto-sans-thai overflow-x-hidden;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent;
+  }
+  
+  .blue-gradient {
+    @apply bg-gradient-to-r from-blue-500 to-blue-600;
+  }
+  
+  .card-gradient {
+    @apply bg-gradient-to-br from-secondary to-background/90 backdrop-blur-sm border border-border/50;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-gray-200 dark:border-white/10 shadow-lg dark:bg-black/5;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .animate-on-scroll.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth scrolling for entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional responsive tweaks */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Optimize images for web */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove App.css styles that might interfere with the responsive design */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+}
+
+@font-face {
+  font-family: 'Noto Sans Thai';
+  src: url('/fonts/NotoSansThai-Medium.ttf') format('truetype'),
+        url('/fonts/NotoSansThai-Regular.ttf') format('truetype'),
+        url('/fonts/NotoSansThai-Thin.ttf') format('truetype'),
+       url('/fonts/NotoSansThai-Light.ttf') format('truetype'),
+       url('/fonts/NotoSansThai-Bold.ttf') format('truetype'),
+       url('/fonts/NotoSansThai-Black.ttf') format('truetype'),
+       url('/fonts/NotoSansThai-ExtraBold.ttf') format('truetype'),
+       url('/fonts/NotoSansThai-ExtraLight.ttf') format('truetype'),
+       url('/fonts/NotoSansThai-SemiBold.ttf') format('truetype'),
+       url('/fonts/NotoSansThai_SemiCondensed-Thin.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_SemiCondensed-Light.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_SemiCondensed-Regular.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_SemiCondensed-Medium.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_SemiCondensed-SemiBold.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_SemiCondensed-Bold.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_SemiCondensed-Black.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_SemiCondensed-ExtraBold.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_SemiCondensed-ExtraLight.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_ExtraCondensed-Thin.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_ExtraCondensed-Light.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_ExtraCondensed-Regular.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_ExtraCondensed-Medium.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_ExtraCondensed-SemiBold.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_ExtraCondensed-Bold.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_ExtraCondensed-Black.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_ExtraCondensed-ExtraBold.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_ExtraCondensed-ExtraLight.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_Condensed-Thin.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_Condensed-Light.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_Condensed-Regular.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_Condensed-Medium.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_Condensed-SemiBold.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_Condensed-Bold.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_Condensed-Black.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_Condensed-ExtraBold.ttf') format('truetype'),
+        url('/fonts/NotoSansThai_Condensed-ExtraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
