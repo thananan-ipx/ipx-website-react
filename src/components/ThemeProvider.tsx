@@ -20,9 +20,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       if (savedTheme) return savedTheme;
       
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      return prefersDark ? "dark" : "dark";
+      return prefersDark ? "dark" : "light";
     }
-    return "dark";
+    return "light";
   });
 
   useEffect(() => {
