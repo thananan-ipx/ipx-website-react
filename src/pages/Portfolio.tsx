@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { useLocalization } from "@/contexts/LocalizationContext";
 
+import projectsData from "@/data/projects.json";
+
 interface Project {
   id: number;
   title: string;
@@ -23,13 +25,7 @@ const Portfolio = () => {
   const navigate = useNavigate();
   
   useEffect(() => {
-    // ดึงข้อมูลจาก projects.json
-    const fetchProjects = async () => {
-      const response = await fetch("/src/data/projects.json");
-      const data = await response.json();
-      setProjects(data);
-    };
-    fetchProjects();
+      setProjects(projectsData);
   }, []);
 
   const filteredProjects = activeCategory === "All" 
