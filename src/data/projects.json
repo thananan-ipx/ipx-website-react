@@ -1,12 +1,32 @@
 [
-    {
+  {
       "id": 1,
+      "title": "All Ball Star Python",
+      "description": "e-commerce platform specifically designed for the buying and selling of ball pythons and other exotic snakes. Built to serve both breeders and collectors, the platform features: Product Listings with detailed snake profiles (morphs, genetics, age, price) User-friendly Shopping Experience for browsing, searching, and filtering Messaging System for direct communication between buyers and sellers",
+      "category": "Software Development",
+      "client": "All Ball Star Python",
+      "technologies": ["Next.JS", "Tailwind CSS", "Preline", "PostgreSQL"],
+      "image": "/lovable-uploads/portfolio4_1.png",
+      "duration": "2 months",
+      "teamSize": 2,
+      "challenge": "The client needed a specialized e-commerce platform for exotic snake trading — a niche market with unique requirements such as displaying genetic traits, morph variations, and breeder-specific details. Off-the-shelf platforms couldn’t accommodate the level of customization needed.",
+      "solution": "I Progress X developed a fully custom web application using Next.js, Tailwind CSS, and PostgreSQL. The platform included advanced product listing features, filtering by morph and genetics, and a built-in messaging system to connect buyers and sellers directly.",
+      "results": "The platform successfully streamlined the buying and selling process for breeders and collectors. Users reported increased engagement, smoother transactions, and better communication, leading to stronger community trust and recurring users.",
+      "gallery": [
+        "/lovable-uploads/portfolio4_1.png",
+        "/lovable-uploads/portfolio4_2.png",
+        "/lovable-uploads/portfolio4_3.png",
+        "/lovable-uploads/portfolio4_4.png"
+      ]
+    },
+    {
+      "id": 2,
       "title": "Investment System",
       "description": "Implements Investment System for Broker to see information about investment of user",
       "category": "Web Development",
       "client": "Anonymous",
       "technologies": ["Next.JS", ".NET", "MySQL"],
-      "image": "/lovable-uploads/portfolio1_1.png",
+      "image": "/lovable-uploads/portfolio1_3.png",
       "duration": "6 months",
       "teamSize": 5,
       "challenge": "The client needed a comprehensive system that would allow brokers to monitor client investments in real-time, with detailed analytics and reporting capabilities.",
@@ -15,11 +35,12 @@
       "gallery": [
         "/lovable-uploads/portfolio1_1.png",
         "/lovable-uploads/portfolio1_2.png",
-        "/lovable-uploads/portfolio1_3.png"
+        "/lovable-uploads/portfolio1_3.png",
+        "/lovable-uploads/portfolio1_4.png"
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Rocket Plan",
       "description": "Made task breakdown and estimate working plan to monitor and control project",
       "category": "Project Management",
@@ -37,7 +58,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Anusit Model",
       "description": "Update Excel File with VBA macro to increase algorithm of excl file",
       "category": "Software Development",

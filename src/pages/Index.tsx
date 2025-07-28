@@ -6,7 +6,7 @@ import Hero from "@/components/home/Hero";
 import About from "@/components/home/About";
 import Services from "@/components/home/Services";
 import Portfolio from "@/components/home/Portfolio";
-import Team from "@/components/home/Team";
+// import Team from "@/components/home/Team";
 import Contact from "@/components/home/Contact";
 import Tools from "@/components/home/Tools";
 import Mission from "@/components/home/Mission";
@@ -36,9 +36,9 @@ const Index = () => {
         <div className="animate-on-scroll">
           <Portfolio />
         </div>
-        <div className="animate-on-scroll">
+        {/* <div className="animate-on-scroll">
           <Team />
-        </div>
+        </div> */}
         <div className="animate-on-scroll">
           <Mission />
         </div>
